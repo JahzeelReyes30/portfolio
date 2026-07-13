@@ -86,8 +86,8 @@ p { margin: 0 0 16px; color: var(--slate-500); }
   text-align: center;
 }
 .hero-photo {
-  width: 140px;
-  height: 140px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--white);
