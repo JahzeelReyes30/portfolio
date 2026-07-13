@@ -85,6 +85,15 @@ p { margin: 0 0 16px; color: var(--slate-500); }
   padding: 90px 0 70px;
   text-align: center;
 }
+.hero-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--white);
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
+}
 .hero-eyebrow {
   color: var(--indigo-600);
   font-weight: 700;
