@@ -10,6 +10,15 @@ function renderProjects() {
       <article class="project-card">
         <h3>${project.title}</h3>
         <p class="project-tagline">${project.tagline}</p>
+        ${
+          project.images
+            ? `<div class="project-gallery">
+                ${project.images
+                  .map((img) => `<img src="${img.src}" alt="${img.alt}" loading="lazy" />`)
+                  .join("")}
+              </div>`
+            : ""
+        }
         <p class="project-description">${project.description}</p>
         <ul class="project-highlights">
           ${project.highlights.map((point) => `<li>${point}</li>`).join("")}
@@ -18,7 +27,11 @@ function renderProjects() {
           ${project.tech.map((t) => `<li>${t}</li>`).join("")}
         </ul>
         <div class="project-links">
-          <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
+          ${
+            project.liveUrl
+              ? `<a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>`
+              : ""
+          }
           <a href="${project.repoUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Code</a>
         </div>
       </article>

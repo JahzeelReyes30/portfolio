@@ -45,4 +45,30 @@ const PROJECTS = [
     liveUrl: "https://claude.ai/code/artifact/01da0d3e-9eff-41d1-9b8f-29b4eac18e8f",
     repoUrl: "https://github.com/JahzeelReyes30/tic-tac-toe-project1",
   },
+  {
+    title: "Virtual Network Security Lab",
+    tagline: "Cybersecurity bootcamp simulation — built and secured a client's network in VMs",
+    description:
+      "A cybersecurity career simulation where I acted as an IT subject matter expert for a " +
+      "client who needed a network upgrade but had no budget for new hardware. I built the " +
+      "entire environment as virtual machines in Oracle VirtualBox instead — a router/firewall, " +
+      "DNS server, web server, CEO workstation, and Kali Linux boxes for security testing. From " +
+      "there I diagnosed and fixed a real IP/DNS misconfiguration, documented every machine's " +
+      "network config, scanned for open ports with Nmap, and used Wireshark to prove that FTP " +
+      "transmits login credentials in plain text.",
+    highlights: [
+      "Diagnosed and fixed a live IPv4/DNS misconfiguration on a workstation",
+      "Port-scanned a DNS server and web server with Nmap to assess exposure",
+      "Captured FTP traffic in Wireshark, exposing plaintext credentials as a security finding",
+      "Wrote client-facing security recommendations based on the findings",
+    ],
+    tech: ["VirtualBox", "Kali Linux", "Nmap", "Wireshark", "Linux Networking", "FTP"],
+    repoUrl: "https://github.com/JahzeelReyes30/virtual-network-security-lab",
+    images: [
+      { src: "images/virtual-network-lab/01-network-diagram.png", alt: "Network architecture diagram: trusted zone, DMZ, and untrusted zone" },
+      { src: "images/virtual-network-lab/03-ipv4-troubleshooting.png", alt: "Fixing an IPv4 misconfiguration on the CEO workstation" },
+      { src: "images/virtual-network-lab/11-nmap-webserver-scan.png", alt: "Nmap scan revealing open ports on the web server" },
+      { src: "images/virtual-network-lab/12-wireshark-capture.png", alt: "Wireshark capturing FTP credentials in plain text" },
+    ],
+  },
 ];

@@ -131,6 +131,19 @@ p { margin: 0 0 16px; color: var(--slate-500); }
   box-shadow: var(--shadow);
 }
 .project-tagline { color: var(--indigo-600); font-weight: 600; margin-bottom: 12px; }
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.project-gallery img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--slate-200);
+}
 .project-description { font-size: 0.95rem; }
 .project-highlights {
   margin: 0 0 18px;
