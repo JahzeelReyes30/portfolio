@@ -98,4 +98,25 @@ const PROJECTS = [
       { src: "images/penetration-test-lab/22-john-the-ripper-cracked.jpeg", alt: "Cracking user account passwords with John the Ripper" },
     ],
   },
+  {
+    title: "MajinCleaningSolutions Ops MCP Server",
+    tagline: "MCP server connecting an AI assistant directly to my live production database",
+    description:
+      "An MCP (Model Context Protocol) server that connects Claude Desktop or any other " +
+      "MCP-compatible AI assistant directly to the real Supabase database behind " +
+      "MajinCleaningSolutions, my live production booking app. Instead of logging into the " +
+      "admin dashboard, an assistant can check real appointment availability, list upcoming " +
+      "bookings, and update a booking's status — all against live data, enforcing the exact " +
+      "same business-hours and status-transition rules as the production site. Deliberately " +
+      "uses the Supabase service-role key instead of the public anon key, since this server " +
+      "only ever runs locally under my own control, standing in for the business owner.",
+    highlights: [
+      "Built with the official MCP SDK — the protocol layer AI apps use to connect to real tools/data",
+      "Reuses the exact business-hours and status-transition logic from the live production app",
+      "Deliberate security design: service-role key stays local, never exposed publicly",
+      "Verified end-to-end over the real MCP protocol (handshake, tool listing, live tool calls)",
+    ],
+    tech: ["TypeScript", "Node.js", "Model Context Protocol", "Supabase", "PostgreSQL"],
+    repoUrl: "https://github.com/JahzeelReyes30/majincleaning-ops-mcp",
+  },
 ];
