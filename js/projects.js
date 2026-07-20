@@ -71,4 +71,31 @@ const PROJECTS = [
       { src: "images/virtual-network-lab/12-wireshark-capture.png", alt: "Wireshark capturing FTP credentials in plain text" },
     ],
   },
+  {
+    title: "Penetration Test & Vulnerability Assessment Lab",
+    tagline: "Cybersecurity bootcamp simulation — hired as a penetration tester to break into two servers",
+    description:
+      "A cybersecurity career simulation where I was hired as the penetration tester for a " +
+      "company that needed its Production Server and Web Server assessed before going live. " +
+      "Working from Kali Linux inside an isolated VirtualBox network, I scanned both targets " +
+      "with Nmap, researched and documented four CVE/CVSS-rated vulnerabilities per server, " +
+      "and weaponized the findings in Metasploit to gain root on both machines through " +
+      "different exploit vectors. I then proved persistence by planting a root backdoor " +
+      "account, hunted both servers for sensitive files, and — as a bonus — cracked the " +
+      "Production Server's user passwords with John the Ripper.",
+    highlights: [
+      "Documented 8 CVE/CVSS-rated vulnerabilities across two servers using NIST NVD",
+      "Gained root on both servers with Metasploit, using a different exploit vector each time",
+      "Planted a persistent root backdoor account to prove the takeover wasn't one-time",
+      "Cracked user account passwords with unshadow + John the Ripper",
+    ],
+    tech: ["Kali Linux", "Metasploit", "Nmap", "John the Ripper", "VirtualBox", "CVE/CVSS Research"],
+    repoUrl: "https://github.com/JahzeelReyes30/penetration-test-lab",
+    images: [
+      { src: "images/penetration-test-lab/01-network-diagram.jpeg", alt: "Network diagram: trusted zone, DMZ, and untrusted zone with two target servers" },
+      { src: "images/penetration-test-lab/07-exploit-vsftpd-production.jpeg", alt: "Exploiting the vsFTPd backdoor in Metasploit to gain root on the Production Server" },
+      { src: "images/penetration-test-lab/17-backdoor-account.jpeg", alt: "Planting a persistent root-level backdoor account" },
+      { src: "images/penetration-test-lab/22-john-the-ripper-cracked.jpeg", alt: "Cracking user account passwords with John the Ripper" },
+    ],
+  },
 ];
